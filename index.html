@@ -309,12 +309,11 @@ src="https://www.youtube.com/embed/AdO5GhS986s">
 				            </span> 
             
             <br>
-            MUNA-BÆTA KERF INN Í PARAMETERS
             <br>
         Mikilvægt er að nota parametra ef skyndilega þarf að endurstilla  stærðir tölvustandsins þegar lengra er komið, t.d. til þess að breyta vídd hans eða þykkt. Einfalt er að koma þykktinni á alla hluta tölvustandsins með því að velja <b>Extrude</b> og svo að nota þykkt úr parametrum. Skipunina <b>Fillet</b> má svo nota til þess að mýkja endana. 
         <br>
         <br>
-    Nú þegar einn fóturinn er tilúinn þá er einfaldlega hægt að <b>Copy, Paste</b> til þess að fá annan alveg eins. Það verður til þess að allar breytingar sem gerðar á einum fæti verða einnig gerðar á hinum. Svo getum við notað skipunina <b>Offset</b> og svo að nota parameter fyrir vídd.
+    Nú þegar einn fóturinn er tilúinn þá er einfaldlega hægt að <b>Copy, Paste</b> til þess að fá annan alveg eins. Það verður til þess að allar breytingar sem gerðar á einum fæti verða einnig gerðar á hinum. Næst getum við notað skipunina <b>Offset</b> og notað svo parameter fyrir vídd.
         <br>
             <span class="image">
 				            <img src="images/faetur.png"  width="560" height="260" />
@@ -323,7 +322,7 @@ src="https://www.youtube.com/embed/AdO5GhS986s">
         Á þessum tímapunkti ættu fæturnir að líta ágætlega út. Myndin hér að ofan sýnir hvernig þeir munu líta út í lokin þegar búið er að skera aðeins af þeim gera ráð fyrir plötunni. 
             <br>
             <br>
-            Þá er um að gera að búa til nýtt component líkt og áður fyrir plötuna sem sett verður ofaná fæturnar. Nú smellum við því aftur á <b>New sketch</b>, einfaldast er að velja skáplanið ofan á fótunum til þess að teikna á. Þegar búið er að skissa upp plötu og setja upp parametra fyrir viðeigandi lengdir þá þarf að huga að því að við viljum hafa fjögur göt á plötunni þar sem efni fótanna munu koma í gegn. Það dugar að skissa upp eitt gat vegna þess að <b>Mirror</b> skipunin mun sjá um að spegla götin á hina staði plötunnar. Þá ætti skissan að vera tilbúin. Þá er komið að því að nota <b>Extrude</b>. Við munum extrude-a alla hluta plötunnar <b>nema</b> götin. Notum parametra fyrir þykkt og extrude-um um mínus þykkt (-t). Nú notum við skipunina <b>Combine</b> til þess að fjarlægja þá hluta af fótunum sem skarast á við plötuna, eftir að hún var extrude-uð. Þá ætti platan að liggja frekar óstöðug á fótunum.
+            Þá er um að gera að búa til nýtt component líkt og áður fyrir plötuna sem sett verður ofaná fæturnar. Nú smellum við því aftur á <b>New sketch</b>, einfaldast er að velja skáplanið ofan á fótunum til þess að teikna á. Þegar búið er að skissa upp plötu og setja upp parametra fyrir viðeigandi lengdir þá þarf að huga að því að við viljum hafa fjögur göt á plötunni þar sem efni fótanna mun koma í gegn. Það dugar að skissa upp eitt gat vegna þess að <b>Mirror</b> skipunin mun sjá um að spegla götin á hina staði plötunnar. Þá ætti skissan að vera tilbúin. Þá er komið að því að nota <b>Extrude</b>. Við munum extrude-a alla hluta plötunnar <b>nema</b> götin. Notum parametra fyrir þykkt og extrude-um um mínus þykkt (-t). Nú notum við skipunina <b>Combine</b> til þess að fjarlægja þá hluta af fótunum sem skarast á við plötuna, eftir að hún var extrude-uð. Þá ætti platan að liggja, þó frekar óstöðug á fótunum.
             <br>
             <br>
             Síðustu tveir hlutar sem við bætum því við verða undirstöður. Ekki skiptir öllu máli hvar þær liggja en ég ákvað að hafa þær jafnlangt frá hverjum enda, 30 mm frá. Enn og aftur notum við <b>Sketch</b> til þess að skissa upp undirstöður. Notum parameter fyrir vídd til þess að fá sömu vídd plötunnar. Svo getum við notað skipunina <b>Intersect</b> fá undirstöðurnar í gegnum fæturnar. Að lokum verðum við að fjarlægja örlítinn hluta af fótunum svo að undirstöðurnar renni beint í gegn og festist. Þá notum við <b>Line</b> skipunina til þess að skissa línu í gegnum miðju undirstöðunnar (lárétta). Þá extruda ég undirstöðuna báðum megin um helming þykktar (t/2) svo að hún sé samhverf um þá fjarlægð sem ég valdi frá enda fótanna. Þá ætti að vera óhætt að fjarlægja neðri hluta fótanna sem skarast á við undirstöðuna. Þegar ein undirstaðan er klár þá getum við notað <b>Mirror</b> skipunina eins og áður til þess að fá aðra undirstöðu.
@@ -347,7 +346,7 @@ src="https://www.youtube.com/embed/AdO5GhS986s">
                                       
         <h2>Geislaskurður</h2>
         <p>Þá er komið að því að geislaskera.
-            Þegar tölvustandurinn er tilbúinn í Fusion má afrita hvern og einn hluta, þ.e.a.s. báðar fætur, báðar undirstöður og plötuna, svo má færa allt saman til hliðar. Þegar það hefur tekist má leggja allt saman og extrude-a um þykkt sem nemur kerf, þá ætti að vera óhætt að undirbúa flutning yfir í <b>DXF File</b> og svo yfir í <b>Inkspace</b>. Þegar búið er að fletja alla hlutana út á eitt plan, þétt saman, þá má vista það sem búið er að fletja út sem DXF skrá.
+            Þegar tölvustandurinn er tilbúinn í Fusion má afrita hvern og einn hluta, þ.e.a.s. báðar fætur, báðar undirstöður og plötuna, svo má færa allt saman til hliðar. Þá má núna extrudea alla hlutina um þá þykkt sem nemur kerf. Þegar búið er að fletja alla hlutana út á eitt plan, þétt saman, þá má vista það sem búið er að fletja út sem DXF skrá.
             <br> 
             Opna má DXF skránna í forritinu Inkspace og hlutirnir ættu þá að birtast þar. Inni í Inkspace er ferhyrningur sem táknar plötuna sem verður geislaskorin. Þá má færa alla hlutina þangað yfir til þess að undirbúa geislaskurð á plötu. Í verkefninu valdi ég að nota 4x300x600 birkikrossvið. 
             <br>
@@ -356,17 +355,23 @@ src="https://www.youtube.com/embed/AdO5GhS986s">
             <br>
             <br>
             <h2>Ábendingar</h2>
-        Ég hafði mjög gaman að þessu verkefni en alltaf getur eitthvað komið upp á.
-                                      <br>
+
         Fusion 360 gekk eins og í sögu en komið að því að halda áfram þá flæktust málin örlítið. Ég mæli með því að fá lánaða tölvu upp í Fablab þegar komið er að því að klára verklega hlutann, vegna þess að þar voru öll forrit tiltæk sem þarf að nota.
                                       <br>
                                       <br>
         Það sem betur hefði mátt fara hjá mér er án efa lokaskrefið, geislaskurðurinn sjálfur. Af einhverri óþekktri ástæðu voru línurnar mínar í Inkspace tvöfaldar fyrir einn fótinn og eina undirstöðuna. Það gerir það að verkum að tölvustandurinn minn er örlítið óstöðugur þar sem laserinn fór tvisvar í gegn og skekkir það mínar stillingar á kerf. 
-                                      </p>
-                                     <iframe width="420" height="315"
-src="https://www.youtube.com/embed/YNCO8UDI_nM">
-</iframe>                
+                                  <br>
+                                      <br>
+           <h2>Hópverkefnið</h2>   
+        <a href="https://atlifryer.github.io/proj2.html#section2">Hér</a>, á heimasíðunni hans Atla má nálgast hópverkefnið okkar Atla og Jóns, þar sem við völdum geislaskerara og mældum kerf.
 							</article>
+                                
+                                 <!-- v3 -->
+                                
+							<article id="v3">
+								<h2 class="major">Verkefni 3</h2>
+                                <p>Halló</p>
+                                </article>
 								
 						<!-- Elements -->
 							<article id="elements">
